@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Example content
+title: NetflixSchool
 ---
 
 안녕하세요.
