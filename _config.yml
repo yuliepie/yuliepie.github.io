@@ -6,6 +6,11 @@ url:
 baseurl: ""
 paginate: 5
 permalink: pretty
+excerpt_separator: <!--more-->
+
+collections:
+  projects:
+    output: true
 
 # About/contact
 author:

@@ -1,0 +1,12 @@
+---
+layout: page
+title: Projects
+---
+
+<div class="posts">
+  {% for post in site.projects %}
+  <h2 class="post-title">
+    <a href="{{ post.url | absolute_url }}"> {{ post.title }} </a>
+  </h2>
+  {{ post.excerpt }} {% endfor %}
+</div>
