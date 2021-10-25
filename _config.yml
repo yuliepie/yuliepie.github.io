@@ -11,6 +11,8 @@ excerpt_separator: <!--more-->
 collections:
   projects:
     output: true
+  weekly:
+    output: true
 
 # About/contact
 author:
