@@ -4,7 +4,7 @@ title: OOP - 객체지향형 프로그래밍
 tag: Programming
 image: /assets/images/oop-pillars.jpg
 ---
-![]({{ page.image | relative_url }})
+![]({{ page.image | relative_url }}){: width="250" }
 
 # Programming Paradigm & OOP
 
