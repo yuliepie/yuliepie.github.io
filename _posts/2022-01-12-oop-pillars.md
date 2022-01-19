@@ -2,7 +2,9 @@
 layout: post
 title: OOP - 객체지향형 프로그래밍
 tag: Programming
+image: /assets/images/oop-pillars.jpg
 ---
+![]({{ page.image | relative_url }})
 
 # Programming Paradigm & OOP
 
