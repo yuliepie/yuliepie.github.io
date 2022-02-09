@@ -45,6 +45,8 @@ So when requests arrive at the server, they are serviced one at a time.
 
 *Picture 3 queues:* The first queue is the **current execution stack**, second queue is for **pending IO callbacks**, and the third queue is tasks **pending execution**. 
 
+<img src="/assets/images/async-queues.png" alt="drawing" width="auto"/>
+
 When the code needs to query the DB for example, it sends the callback to the second queue *and the main thread will continue running* (it doesn't wait) on other tasks from the first and third queues. Now when the DB operation completes and returns, the corresponding callback is pulled out of the second queue and queued in the third queue. When the engine gets a chance to execute something else (current execution stack is empty), it picks up a callback from the third queue and executes it.
 
 ## Performance
